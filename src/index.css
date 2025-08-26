@@ -7,7 +7,7 @@
 
 body {
   background: black;
-  color: #333;
+  color: black;
   font-size: 14px;
 }
 
@@ -19,19 +19,19 @@ body {
 
 .sidebar {
   width: 250px;
-  background: linear-gradient(180deg, black, grey);
-  color: goldenrod;
+  background: rgb(44, 151, 194);
+  color: black;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
+  display: fixed;
 }
 
 .sidebar-logo {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 40px;
-  color: goldenrod;
+  color: black;
   text-align: center;
+  position: fixed;
 }
 
 .sidebar-menu {
@@ -39,6 +39,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  position: fixed;
+  margin-top: 50px;
 }
 
 .sidebar-menu li {
@@ -49,19 +51,20 @@ body {
 }
 
 .sidebar-menu li:hover {
-  background: black;
+  background: white;
   transform: translateX(5px);
+  color: black;
 }
 
 .sidebar-menu .active {
-  background: red;
+  background: black;
   color: white;
 }
 
 .dashboard {
   flex: 1;
   padding: 30px;
-  background: black;
+  background: whitesmoke;
   animation: fadeIn 0.5s ease-in;
 }
 
@@ -69,7 +72,7 @@ body {
   font-size: 28px;
   margin-bottom: 20px;
   font-weight: 600;
-  color: goldenrod;
+  color: black;
 }
 
 .cards {
@@ -80,7 +83,7 @@ body {
 }
 
 .card {
-  background: red;
+  background: rgb(44, 151, 194);
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   overflow: hidden;
@@ -94,11 +97,11 @@ body {
 }
 
 .card-header {
-  background: linear-gradient(135deg, black, #38bdf8);
-  color: white;
+  background: white;
   padding: 14px 18px;
   font-size: 16px;
   font-weight: 600;
+  border-color: black;
 }
 
 .card-body {
@@ -110,7 +113,7 @@ body {
 }
 
 .chart-container {
-  background: red;
+  background: rgb(44, 151, 194);
   padding: 25px;
   margin-bottom: 30px;
   border-radius: 16px;
@@ -150,17 +153,18 @@ th, td {
 }
 
 thead {
-  background: red;
+  background: rgb(44, 151, 194);
   font-weight: 600;
 }
 
 tbody tr:nth-child(even) {
-  background: goldenrod;
+  background: rgb(85, 85, 199);
 }
 
 tbody tr:hover {
   background: black;
   transition: background 0.3s;
+  color: white;
 }
 
 @keyframes fadeIn {
